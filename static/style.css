@@ -1,0 +1,96 @@
+/* Reset & Base */
+body {
+  margin: 0;
+  padding: 0;
+  background: #0f0f0f;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1, h2 {
+  font-weight: 600;
+  color: #00f7ff;
+  margin-bottom: 20px;
+}
+
+a, button {
+  background: #00f7ff;
+  color: #000;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+a:hover, button:hover {
+  background: #00c9cc;
+}
+
+.dashboard {
+  margin-top: 60px;
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  background: #1b1b1b;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+  text-align: center;
+}
+
+.profile-card {
+  background: #232323;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.profile-card p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.play-btn {
+  display: inline-block;
+  margin: 10px 10px;
+  width: 200px;
+}
+
+/* Game Canvas */
+canvas {
+  background: #222;
+  border: 2px solid #00f7ff;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #00f7ff;
+  color: #000;
+}
+
+tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
+tr:nth-child(2) td:first-child::before { font-weight: bold; color: gold; }
+tr:nth-child(3) td:first-child::before { font-weight: bold; color: silver; }
+tr:nth-child(4) td:first-child::before { font-weight: bold; color: #cd7f32; }

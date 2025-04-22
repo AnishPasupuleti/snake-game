@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leaderboard</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard">
+    <h1><i class="fas fa-crown"></i> Global Leaderboard</h1>
+
+    <table>
+      <tr>
+        <th>Rank</th>
+        <th>Username</th>
+        <th>High Score</th>
+      </tr>
+      {% for u in users %}
+      <tr>
+        <td>
+          {% if loop.index == 1 %}
+            🥇
+          {% elif loop.index == 2 %}
+            🥈
+          {% elif loop.index == 3 %}
+            🥉
+          {% else %}
+            {{ loop.index }}
+          {% endif %}
+        </td>
+        <td>{{ u[1]["name"] }}</td>
+        <td>{{ u[1]["high_score"] }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    
+
+    <a href="/dashboard" class="play-btn"><i class="fas fa-arrow-left"></i> Back to Dashboard</a>
+  </div>
+</body>
+</html>

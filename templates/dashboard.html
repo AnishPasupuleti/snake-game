@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <h1><i class="fas fa-user-circle"></i> Welcome, {{ name }}</h1>
+
+    <div class="profile-card">
+      <p><strong><i class="fas fa-envelope"></i> Email:</strong> {{ email }}</p>
+      <p><strong><i class="fas fa-trophy"></i> High Score:</strong> {{ score }}</p>
+      <p><strong><i class="fas fa-gamepad"></i> Games Played:</strong> {{ games }}</p>
+      <p><strong><i class="fas fa-clock"></i> Time Played:</strong> {{ time }} seconds</p>
+      <p><strong><i class="fas fa-globe"></i> Global Play Time:</strong> {{ total_time }} seconds</p>
+    </div>
+
+    <a href="/play" class="play-btn"><i class="fas fa-play-circle"></i> Play Snake</a>
+    <a href="/leaderboard" class="play-btn"><i class="fas fa-crown"></i> View Leaderboard</a>
+
+    <h2 style="margin-top: 40px;">📊 Your Score History</h2>
+    <canvas id="scoreChart" style="max-width: 100%; height: 300px;"></canvas>
+  </div>
+
+  <script>
+    const scoreData = JSON.parse('{{ history | tojson | default("[]", true) }}'.replace(/&quot;/g, '"'));
+    const labels = scoreData.map(e => e.time);
+    const scores = scoreData.map(e => e.score);
+  
+    const ctx = document.getElementById('scoreChart');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: labels,
+        datasets: [{
+          label: 'Score over Time',
+          data: scores,
+          borderColor: 'cyan',
+          backgroundColor: 'rgba(0,255,255,0.2)',
+          borderWidth: 2,
+          tension: 0.3,
+          pointRadius: 4
+        }]
+      },
+      options: {
+        scales: {
+          y: { beginAtZero: true }
+        }
+      }
+    });
+  </script>
+  
+</body>
+</html>
