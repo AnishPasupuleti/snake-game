@@ -1,18 +1,27 @@
-<<<<<<< HEAD
-# 🐍 Enhanced Snake Game
+# 🐍 Snake Web Arcade
 
-Classic snake game with modern UI upgrades:
-- Styled snake and food
-- Dark background
-- Score display in top-left
-- Restart or quit on game over
+An enhanced browser-based **Snake Game** with modern UI, Google login, user profiles, and leaderboard — built using **Flask, JavaScript, and HTML5 Canvas**.
 
-## How to Run
+## 🔥 Features
+
+- 🎮 Playable Snake game in the browser
+- 👤 Google-based Login & Signup
+- 🧾 User profiles with high score, games played, and total time
+- 🏆 Global leaderboard of top 100 players
+- 📈 Score history chart using Chart.js
+- ☁️ All user data stored in JSON (can later connect to DB)
+
+## 🚀 Tech Stack
+
+- **Frontend:** HTML5, CSS, JavaScript (Canvas, Chart.js)
+- **Backend:** Python Flask
+- **Auth:** Google OAuth via Flask-Dance
+- **Storage:** `users.json` file (easy to extend to DB)
+
+## 🛠️ Setup Instructions
 
 ```bash
-pip install pygame
-python game.py
-```
-=======
-# snake-game
->>>>>>> abf7a59dab6af84ea0e7ae5197f23236b947a570
+git clone https://github.com/AnishPasupuleti/snake-game.git
+cd snake-game
+pip install -r requirements.txt
+python app.py
