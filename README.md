@@ -24,3 +24,14 @@ An enhanced browser-based **Snake Game** with modern UI, Google login, user prof
    ```bash
    git clone https://github.com/AnishPasupuleti/snake-game.git
    cd snake-game
+
+
+## 🛠️ Setup Instructions
+
+### 📦 Install dependencies:
+```bash
+pip install -r requirements.txt
+
+
+
+
