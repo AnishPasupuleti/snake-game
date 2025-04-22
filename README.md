@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🐍 Enhanced Snake Game
 
 Classic snake game with modern UI upgrades:
@@ -12,3 +13,6 @@ Classic snake game with modern UI upgrades:
 pip install pygame
 python game.py
 ```
+=======
+# snake-game
+>>>>>>> abf7a59dab6af84ea0e7ae5197f23236b947a570
