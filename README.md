@@ -31,7 +31,5 @@ An enhanced browser-based **Snake Game** with modern UI, Google login, user prof
 ### 📦 Install dependencies:
 ```bash
 pip install -r requirements.txt
-
-
-
-
+python app.py
+ ```
