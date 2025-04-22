@@ -20,8 +20,20 @@ An enhanced browser-based **Snake Game** with modern UI, Google login, user prof
 
 ## 🛠️ Setup Instructions
 
+1. **Clone the repository:**
+
 ```bash
 git clone https://github.com/AnishPasupuleti/snake-game.git
 cd snake-game
 pip install -r requirements.txt
 python app.py
+
+## Configure Google OAuth:
+
+** Go to Google Cloud Console **
+
+Create credentials (OAuth Client ID)
+
+Set redirect URI to: http://localhost:5000/login/google/authorized
+
+Add your client ID and secret to app.py
