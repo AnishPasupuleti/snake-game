@@ -4,39 +4,23 @@ An enhanced browser-based **Snake Game** with modern UI, Google login, user prof
 
 ## 🔥 Features
 
-- 🎮 Playable Snake game in the browser
-- 👤 Google-based Login & Signup
-- 🧾 User profiles with high score, games played, and total time
-- 🏆 Global leaderboard of top 100 players
-- 📈 Score history chart using Chart.js
-- ☁️ All user data stored in JSON (can later connect to DB)
+- 🎮 Playable Snake game in the browser  
+- 👤 Google-based Login & Signup  
+- 🧾 User profiles with high score, games played, and total time  
+- 🏆 Global leaderboard of top 100 players  
+- 📈 Score history chart using Chart.js  
+- ☁️ All user data stored in JSON (can later connect to DB)  
 
 ## 🚀 Tech Stack
 
-- **Frontend:** HTML5, CSS, JavaScript (Canvas, Chart.js)
-- **Backend:** Python Flask
-- **Auth:** Google OAuth via Flask-Dance
-- **Storage:** `users.json` file (easy to extend to DB)
+- **Frontend:** HTML5, CSS, JavaScript (Canvas, Chart.js)  
+- **Backend:** Python Flask  
+- **Auth:** Google OAuth via Flask-Dance  
+- **Storage:** `users.json` file (easy to extend to DB)  
 
 ## 🛠️ Setup Instructions
 
 1. **Clone the repository:**
-
-```bash
-git clone https://github.com/AnishPasupuleti/snake-game.git
-cd snake-game
-pip install -r requirements.txt
-python app.py
-```
-
-## Configure Google OAuth:
-
-1. ** Go to Google Cloud Console **
-
-``` bash 
-Create credentials (OAuth Client ID)
-
-Set redirect URI to: http://localhost:5000/login/google/authorized
-
-Add your client ID and secret to app.py
-```
+   ```bash
+   git clone https://github.com/AnishPasupuleti/snake-game.git
+   cd snake-game
