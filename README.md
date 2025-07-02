@@ -4,7 +4,7 @@ An enhanced browser-based **Snake Game** with modern UI, Google login, user prof
  
 ## 🔥 Features  
   
-- 🎮 Playable Snake game in the browser  
+- 🎮 Playable Snake game in the browser   
 - 👤 Google-based Login & Signup  
 - 🧾 User profiles with high score, games played, and total time   
 - 🏆 Global leaderboard of top 100 players   
