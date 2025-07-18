@@ -10,7 +10,7 @@ An enhanced browser-based **Snake Game** with modern UI, Google login, user prof
 - 🏆 Global leaderboard of top 100 players       
 - 📈 Score history chart using Chart.js    
 - ☁️ All user data stored in JSON (can later connect to DB)     
- 
+  
 ## 🚀 Tech Stack
 
 - **Frontend:** HTML5, CSS, JavaScript (Canvas, Chart.js)  
