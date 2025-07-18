@@ -2,7 +2,7 @@
 
 An enhanced browser-based **Snake Game** with modern UI, Google login, user profiles, and leaderboard — built using **Flask, JavaScript, and HTML5 Canvas**.
   
-## 🔥 Features      
+## 🔥 Features       
      
 - 🎮 Playable Snake game in the browser       
 - 👤 Google-based Login & Signup     
